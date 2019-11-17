@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.clearfloat::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  width: 100%;
+}
+.padding {
+  padding: 0 15px 0;
+  margin: 0 auto;
+  width: 1200px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo a {
+  display: flex;
+}
+header .logo a img {
+  width: 64px;
+  height: 56px;
+}
+header .logo a div {
+  font-family: Raleway;
+  font-size: 34px;
+  line-height: 56px;
+  letter-spacing: -1.36px;
+  color: #ffffff;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  margin: 0 15px 0;
+}
+header nav a:hover .navItem {
+  color: #c7b299;
+}
+header nav a:hover img {
+  transform: scale(1.2);
+}
+header nav :nth-child(9) {
+  margin-left: 30px;
+}
+header nav .navItem {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+header nav .navItemActive {
+  color: #c7b299;
+}
+/*# sourceMappingURL=./common.css.map */
