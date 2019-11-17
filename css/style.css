@@ -1,6 +1,110 @@
+.circlesMixin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 113px;
+  position: absolute;
+  bottom: 40px;
+  left: calc((100% - 113px) / 2);
+}
+.circlesMixin .circle {
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.circlesMixin .circle:hover {
+  transform: scale(1.3);
+}
+.circlesMixin .circleActive {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #d3c1ad;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
 .slider {
   background: url("../img/slider.jpg") no-repeat center;
   background-size: cover;
   height: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slider .pagination {
+  width: 100%;
+  height: 1024px;
+  position: absolute;
+  top: 0px;
+}
+.slider .pagination .arrows {
+  position: absolute;
+  top: calc((100% - 73px) / 2);
+}
+.slider .pagination .arrows :hover {
+  transform: scale(1.15);
+}
+.slider .pagination .arrowLeft {
+  left: 150px;
+}
+.slider .pagination .arrowRight {
+  right: 150px;
+}
+.slider .circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 113px;
+  position: absolute;
+  bottom: 40px;
+  left: calc((100% - 113px) / 2);
+}
+.slider .circles .circle {
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.slider .circles .circle:hover {
+  transform: scale(1.3);
+}
+.slider .circles .circleActive {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #d3c1ad;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+.slider .content {
+  width: 590px;
+  z-index: 1;
+}
+.slider .content .text {
+  text-align: center;
+  color: #ffffff;
+}
+.slider .content .text .text1 {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+}
+.slider .content .text .text2 {
+  font-family: Raleway;
+  font-size: 52px;
+  font-weight: 800;
+  margin: 15px 0 20px;
+}
+.slider .content .text .text3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.slider .content form {
+  text-align: center;
 }
 /*# sourceMappingURL=./style.css.map */

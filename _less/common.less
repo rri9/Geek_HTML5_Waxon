@@ -4,6 +4,8 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -25,6 +27,8 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 0px;
   .logo {
     a {
       display: flex;
@@ -65,5 +69,31 @@ header {
     .navItemActive {
       color: #c7b299;
     }
+  }
+}
+
+.button {
+  width: 170px;
+  height: 53px;
+  border-radius: 3px;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  background-color: #998675;
+  border-width: 0px;
+
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 800;
+  // line-height: 1.64;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    transform: scale(1.03);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(.98);
   }
 }

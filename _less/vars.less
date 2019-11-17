@@ -2,3 +2,44 @@
 @widthDesktop: 1200px;
 // @widthSmall: 600px;
 // @Small: ~"(max-width: 1199px)";
+//Slider
+@sliderHeight: 1024px;
+@sliderContentWidth: 590px;
+
+//Pagination
+@circlesWidth: 113px;
+@arrowHeight: 73px;
+@arrowMargin: 150px;
+
+.circlesMixin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: @circlesWidth;
+  position: absolute;
+  bottom: 40px;
+  left: calc( (100% - @circlesWidth) / 2);
+  .circle {
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+  .circle:hover {
+    transform: scale(1.3);
+  }
+  .circleActive {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #d3c1ad;
+    background-color: rgba(0,0,0,0);
+    border-radius: 50%;
+  }
+}
+
+@keyframes sliderArrowsAnimation {
+  from {
+
+  }
+}
