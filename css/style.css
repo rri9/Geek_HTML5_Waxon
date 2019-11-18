@@ -148,4 +148,40 @@
     bottom: calc((100% - 73px) / 3);
   }
 }
+main div:nth-child(n) {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main div:first-child {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+main div:last-child {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+main .services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .services .serviceItem {
+  text-align: center;
+}
+main .services .serviceItem img {
+  width: 51px;
+  height: 51px;
+}
+main .services .serviceItem h3 {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 600;
+  color: #555555;
+}
+main .services .serviceItem p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  color: #8c8c8c;
+}
 /*# sourceMappingURL=./style.css.map */
