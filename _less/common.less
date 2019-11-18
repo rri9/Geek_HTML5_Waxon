@@ -18,14 +18,34 @@ a {
   height: 0;
   width: 100%;
 }
+
 .padding {
   padding: 0 15px 0;
   margin: 0 auto;
   width: @widthDesktop;
 }
+@media @Res1250 {
+  .padding {
+    width: auto;
+  }
+}
+@media @Res860 {
+  .padding {
+    width: @widthTablet;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+}
+@media @Res500 {
+  .padding {
+    width: @widthMobile;
+  }
+}
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
   top: 0px;
@@ -44,10 +64,14 @@ header {
         color: #ffffff;
       }
     }
+    @media @Res1250 {
+      margin-bottom: 10px;
+    }
   }
   nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     a {
       margin: 0 15px 0;
     }
@@ -94,6 +118,6 @@ header {
     outline: none;
   }
   &:active {
-    transform: scale(.98);
+    transform: scale(0.98);
   }
 }

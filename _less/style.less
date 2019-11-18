@@ -27,6 +27,14 @@
     .arrowRight {
       right: @arrowMargin;
     }
+    @media @Res1250 {
+      .arrowLeft {
+        left: @arrowMarginSmall;
+      }
+      .arrowRight {
+        right: @arrowMarginSmall;
+      }
+    }
   }
   .circles {
     .circlesMixin();
@@ -40,18 +48,18 @@
       color: #ffffff;
       .text1 {
         font-family: Raleway;
-        font-size: 36px;
+        font-size: @text1FontSize;
         font-weight: 500;
       }
       .text2 {
         font-family: Raleway;
-        font-size: 52px;
+        font-size: @text2FontSize;
         font-weight: 800;
         margin: 15px 0 20px;
       }
       .text3 {
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: @text3FontSize;
         font-weight: 300;
         line-height: 1.5;
         margin-bottom: 50px;
@@ -59,6 +67,37 @@
     }
     form {
       text-align: center;
+    }
+  }
+  @media @Res860 {
+    height: @sliderHeightTablet;
+    .pagination {
+      height: @sliderHeightTablet;
+    }
+    .content {
+      width: @sliderContentWidthMobile;
+      .text {
+        .text1 {
+          font-size: @text1FontSize - 14px;
+        }
+        .text2 {
+          font-size: @text2FontSize - 20px;
+        }
+        .text3 {
+          font-size: @text3FontSize - 2px;
+        }
+      }
+    }
+  }
+  @media @Res500 {
+    height: @sliderHeightMobile;
+    .pagination {
+      height: @sliderHeightMobile;
+      .arrows {
+        position: absolute;
+        top: unset;
+        bottom: calc((100% - @arrowHeight) / 3);
+      }
     }
   }
 }
